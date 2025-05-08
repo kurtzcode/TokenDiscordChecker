@@ -1,0 +1,7 @@
+{
+    "name": "token-checker",
+    "description": "Discord Token Checker for checking discord tokens.",
+    "dependencies": {
+        "fs": "^0.0.1-security"
+    }
+}
