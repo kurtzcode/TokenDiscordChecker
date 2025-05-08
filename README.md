@@ -1,5 +1,5 @@
 <h1 align="center">
- 🔍 〢 Token Checker
+ 🔍 〢 Token Discord Checker
 </h1>
 
 ---
