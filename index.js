@@ -16,7 +16,7 @@ const tokens = fs.readFileSync('tokens.txt', 'utf-8').replace(/\r/gi, '').split(
 
             if (userJson.id) {
                 const tokenInfo = `${token} | Username: ${userJson.username} | Email: ${userJson.email ? 'Verified' : 'Not verified'} | Phone: ${userJson.phone ? 'Verified' : 'Not verified'} | Nitro: ${userJson.premium_type !== 0 ? 'True' : 'False'}`;
-                console.log(`\x1b[32m[+] —\x1b[0m \x1b[34m${token.substring(0, 24)}... |\x1b[0m \x1b[30mUSERNAME:\x1b[0m \x1b[33m${userJson.username}\x1b[0m \x1b[34m|\x1b[0m \x1b[30mEMAIL:\x1b[0m \x1b[33m${userJson.email ? 'Verified' : 'Not verified'}\x1b[0m \x1b[34m|\x1b[0m \x1b[30mPHONE:\x1b[0m \x1b[33m${userJson.phone ? 'Verified' : 'Not verified'}\x1b[0m \x1b[34m|\x1b[0m \x1b[30mNITRO:\x1b[0m \x1b[33m${userJson.premium_type !== 0 ? 'True' : 'False'}\x1b[0m`);    
+                console.log(`\x1b[32m[+] —\x1b[0m \x1b[34m${token.substring(0, 24)}... |\x1b[0m \x1b[37mUSERNAME:\x1b[0m \x1b[33m${userJson.username}\x1b[0m \x1b[34m|\x1b[0m \x1b[37mEMAIL:\x1b[0m \x1b[33m${userJson.email ? 'Verified' : 'Not verified'}\x1b[0m \x1b[34m|\x1b[0m \x1b[37mPHONE:\x1b[0m \x1b[33m${userJson.phone ? 'Verified' : 'Not verified'}\x1b[0m \x1b[34m|\x1b[0m \x1b[37mNITRO:\x1b[0m \x1b[33m${userJson.premium_type !== 0 ? 'True' : 'False'}\x1b[0m`);    
 
                 if (userJson.premium_type !== 0) nitroTokens.push(tokenInfo);
                 validTokens.push(tokenInfo);
